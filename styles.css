@@ -1,0 +1,433 @@
+.wallet-tracker-container {
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.wt-header h3 {
+  margin: 0 0 4px 0;
+}
+
+.wt-total {
+  font-size: 0.95em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.wt-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.wt-dcard {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-left: 4px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.wt-dcard-full {
+  grid-column: 1 / -1;
+}
+
+.wt-dcard-label {
+  font-size: 0.72em;
+  color: var(--text-muted);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wt-dcard-value {
+  font-size: 1.05em;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 3px;
+  color: var(--text-normal);
+}
+
+.wt-c-neutral {
+  border-left-color: var(--interactive-accent);
+}
+
+.wt-c-green {
+  border-left-color: #4caf50;
+}
+.wt-c-green .wt-dcard-value {
+  color: #4caf50;
+}
+
+.wt-c-red {
+  border-left-color: #e57373;
+}
+.wt-c-red .wt-dcard-value {
+  color: #e57373;
+}
+
+.wt-c-teal {
+  border-left-color: #4dd0c4;
+}
+.wt-c-teal .wt-dcard-value {
+  color: #26a69a;
+}
+
+.wt-c-orange {
+  border-left-color: #ffb74d;
+}
+.wt-c-orange .wt-dcard-value {
+  color: #ff9800;
+}
+
+.wt-c-gold {
+  border-left-color: #ffd54f;
+}
+.wt-c-gold .wt-dcard-value {
+  color: #f9a825;
+}
+
+.wt-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 8px;
+}
+
+.wt-tab {
+  background: transparent;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.85em;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.wt-tab-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.wt-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wt-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.wt-btn {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.82em;
+  cursor: pointer;
+  color: var(--text-normal);
+}
+
+.wt-btn:hover {
+  background: var(--background-modifier-hover);
+}
+
+.wt-btn-primary {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+  margin-bottom: 6px;
+}
+
+.wt-btn-danger {
+  color: var(--text-error);
+}
+
+.wt-btn-success {
+  color: var(--text-success, #3da35d);
+}
+
+.wt-btn-ghost {
+  opacity: 0.6;
+}
+
+.wt-quick-actions {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0 8px 0;
+}
+
+.wt-btn-half {
+  flex: 1;
+  text-align: center;
+  padding: 8px 10px;
+  font-weight: 600;
+}
+
+.wt-btn-transfer {
+  width: 100%;
+  text-align: center;
+  padding: 8px 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #7e57c2;
+  border-color: #7e57c2;
+}
+
+.wt-hist-transfer {
+  color: #7e57c2;
+}
+
+.wt-card {
+  background: var(--background-secondary);
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.wt-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.wt-balance {
+  font-weight: 600;
+}
+
+.wt-muted {
+  font-size: 0.8em;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.wt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.wt-progress-outer {
+  width: 100%;
+  height: 8px;
+  background: var(--background-modifier-border);
+  border-radius: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.wt-progress-inner {
+  height: 100%;
+  background: var(--interactive-accent);
+  border-radius: 4px;
+}
+
+.wt-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.wt-month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wt-month-label {
+  font-weight: 600;
+  min-width: 120px;
+  text-align: center;
+}
+
+.wt-btn-icon {
+  padding: 2px 10px;
+}
+
+.wt-category-filters {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wt-history-projected {
+  opacity: 0.55;
+}
+
+.wt-history-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.wt-hist-amount {
+  font-weight: 600;
+}
+
+.wt-hist-neg {
+  color: var(--text-error);
+}
+
+.wt-hist-pos {
+  color: var(--text-success, #3da35d);
+}
+
+.wt-hist-del {
+  padding: 2px 8px;
+}
+
+.wt-hist-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wt-hist-pending-neg {
+  color: #ff9800;
+}
+
+.wt-hist-pending-pos {
+  color: #26a69a;
+}
+
+.wt-c-teal-text {
+  color: #26a69a;
+}
+
+.wt-subheading {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  margin: 6px 0 -2px 0;
+}
+
+.wt-invoice-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px solid var(--background-modifier-border);
+  flex-wrap: wrap;
+}
+
+.wt-invoice-amount {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* ============================================================
+   MOBILE (Obsidian adds body.is-mobile on phones/tablets)
+   ============================================================ */
+
+body.is-mobile .wallet-tracker-container {
+  padding: 14px 10px;
+}
+
+body.is-mobile .wt-dashboard {
+  gap: 10px;
+}
+
+body.is-mobile .wt-dcard {
+  padding: 10px 12px;
+}
+
+body.is-mobile .wt-dcard-label {
+  font-size: 0.78em;
+}
+
+body.is-mobile .wt-dcard-value {
+  font-size: 1.15em;
+}
+
+body.is-mobile .wt-tabs {
+  gap: 6px;
+}
+
+body.is-mobile .wt-tab {
+  padding: 8px 14px;
+  font-size: 0.95em;
+}
+
+body.is-mobile .wt-btn {
+  padding: 10px 14px;
+  font-size: 0.95em;
+  min-height: 40px;
+}
+
+body.is-mobile .wt-btn-icon {
+  padding: 8px 18px;
+  min-height: 40px;
+}
+
+body.is-mobile .wt-btn-half {
+  padding: 12px 10px;
+  font-size: 1em;
+}
+
+body.is-mobile .wt-hist-del {
+  padding: 8px 14px;
+  font-size: 1.1em;
+}
+
+body.is-mobile .wt-hist-right {
+  gap: 12px;
+}
+
+body.is-mobile .wt-actions {
+  gap: 8px;
+}
+
+body.is-mobile .wt-actions .wt-btn {
+  flex: 1;
+  min-width: 90px;
+  text-align: center;
+}
+
+body.is-mobile .wt-month-nav {
+  gap: 16px;
+}
+
+body.is-mobile .wt-month-label {
+  font-size: 1.05em;
+}
+
+body.is-mobile .wt-category-filters {
+  gap: 6px;
+}
+
+body.is-mobile .wt-history-row {
+  padding: 12px 0;
+  align-items: center;
+}
+
+body.is-mobile .wt-card-top {
+  gap: 10px;
+}
+
+body.is-mobile .wt-balance {
+  font-size: 1.05em;
+}
+
+/* Extra-narrow phones: let the current-month card breathe on its own row */
+@media (max-width: 340px) {
+  body.is-mobile .wt-dashboard {
+    grid-template-columns: 1fr;
+  }
+  body.is-mobile .wt-dcard-full {
+    grid-column: auto;
+  }
+}
