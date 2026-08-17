@@ -6,5 +6,5 @@
   "description": "Controle de contas bancárias, despesas, ganhos, metas de economia e parcelamentos, direto no Obsidian.",
   "author": "Atlas Society",
   "authorUrl": "",
-  "isDesktopOnly": false,
+  "isDesktopOnly": "false",
 }
