@@ -51,6 +51,15 @@ lateral, sem precisar de planilha.
    "Restricted mode" se estiver ativo, e ative o **Wallet Tracker** na lista.
 4. Clique no ícone de carteira na barra lateral para abrir o painel.
 
+## Uso
+1. Adicione em CONTAS seus bancos e cores.
+2. Adicione os valores nas contas.
+3. Adicione seus cartões de credito.
+4. Adicione seus parcelamentos.
+5. Adicione despesas fixas e despesas do dia-a-dia.
+
+Depois é só adicionar manualmente todos seus ganhos e gastos.
+
 ## Uso dos dados
 
 Todas as informações (contas, cartões, lançamentos, metas, faturas) ficam
