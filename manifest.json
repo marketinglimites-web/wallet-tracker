@@ -3,7 +3,7 @@
   "name": "Wallet Tracker",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "Controle de contas bancárias, despesas, ganhos, metas de economia e parcelamentos, direto no Obsidian.",
+  "description": "Controle de contas bancárias, despesas, ganhos, metas de economia e parcelamentos",
   "author": "Atlas Society",
   "authorUrl": "",
   "isDesktopOnly": false
