@@ -1,0 +1,43 @@
+name: Build e Attestation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Criar diretório de distribuição
+        run: |
+          mkdir -p dist
+          cp main.js dist/
+          cp styles.css dist/
+          cp manifest.json dist/
+
+      - name: Criar pacote
+        run: |
+          cd dist
+          zip -r ../wallet-tracker.zip .
+
+      - name: Gerar atestação
+        uses: actions/attest@v4
+        with:
+          subject-path: wallet-tracker.zip
+
+      - name: Publicar artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: wallet-tracker
+          path: wallet-tracker.zip
